@@ -5,11 +5,7 @@ describe('Página de cadastro', () => {
   });
 
   it('Preencher os campos do formulário corretamente para cadastrar um novo usuário', () => {
-    cy.get('[data-test="input-name"]').type('Jarbas da Costa');
-    cy.get('[data-test="input-email"]').type('jarbas@email.com');
-    cy.get('[data-test="input-password"]').type('Senha123');
-    cy.get('[data-test="input-confirm-password"]').type('Senha123');
-    cy.get('[data-test="submit-button"]').click();
+    cy.cadastrar('Jarbas da Costa','jarbas@email.com','Senha123');
   })
   it('Não preencher os campos do formulário para cadastrar um novo usuário', () => {
     cy.get('[data-test="submit-button"]').click();
@@ -18,11 +14,7 @@ describe('Página de cadastro', () => {
     cy.contains('Repita a senha criada acima').should('be.visible');
   })
   it('Preencher os campos do formulário incorretamente para cadastrar um novo usuário', () => {
-    cy.get('[data-test="input-name"]').type('Jarbas da Costa');
-    cy.get('[data-test="input-email"]').type('jarbas');
-    cy.get('[data-test="input-password"]').type('Senha');
-    cy.get('[data-test="input-confirm-password"]').type('se');
-    cy.get('[data-test="submit-button"]').click();
+    cy.cadastrar('Jarbas da Costa','jarbas','Senha', 'se');
     cy.contains('Por favor, verifique o email digitado').should('be.visible');
     cy.contains('A senha deve conter pelo menos uma letra maiúscula, um número e ter entre 6 e 15 caracteres').should('be.visible');
     cy.contains('As senhas não batem').should('be.visible');

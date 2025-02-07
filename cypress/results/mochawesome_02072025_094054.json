@@ -1,0 +1,220 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-02-07T12:40:50.704Z",
+    "end": "2025-02-07T12:40:54.563Z",
+    "duration": 3859,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6f8696b1-1d68-4cee-98c7-e7a2215532be",
+      "title": "",
+      "fullFile": "cypress\\e2e\\aula2-pagina-inicial.cy.js",
+      "file": "cypress\\e2e\\aula2-pagina-inicial.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "644e45e9-0081-4b0c-a388-119499358f8a",
+          "title": "Página inicial",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "deve  clicar no botão ‘Ver pets disponíveis para adoção”",
+              "fullTitle": "Página inicial deve  clicar no botão ‘Ver pets disponíveis para adoção”",
+              "timedOut": null,
+              "duration": 713,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.button').click();",
+              "err": {},
+              "uuid": "69460f39-2041-4cf2-82fa-8d06773354f4",
+              "parentUUID": "644e45e9-0081-4b0c-a388-119499358f8a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "deve testar os botão de home",
+              "fullTitle": "Página inicial deve testar os botão de home",
+              "timedOut": null,
+              "duration": 220,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.header__home').click();",
+              "err": {},
+              "uuid": "325c757c-994d-4358-82ab-3329d483c46a",
+              "parentUUID": "644e45e9-0081-4b0c-a388-119499358f8a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve testar os botão de mensagens",
+              "fullTitle": "Página inicial Deve testar os botão de mensagens",
+              "timedOut": null,
+              "duration": 232,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.header__message').click();",
+              "err": {},
+              "uuid": "ca6408fa-b5b3-4413-949c-6d59925e3746",
+              "parentUUID": "644e45e9-0081-4b0c-a388-119499358f8a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica se o title com o texto “AdoPet” está presente no html",
+              "fullTitle": "Página inicial Verifica se o title com o texto “AdoPet” está presente no html",
+              "timedOut": null,
+              "duration": 95,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.title().should('eq', 'AdoPet');",
+              "err": {},
+              "uuid": "7bab5518-ef67-4ada-b065-83efcb8ed283",
+              "parentUUID": "644e45e9-0081-4b0c-a388-119499358f8a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica se o texto “Quem ama adota!” está presente no html",
+              "fullTitle": "Página inicial Verifica se o texto “Quem ama adota!” está presente no html",
+              "timedOut": null,
+              "duration": 431,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('Quem ama adota!').should('be.visible');",
+              "err": {},
+              "uuid": "5a209e64-616e-4313-878e-15954b66738e",
+              "parentUUID": "644e45e9-0081-4b0c-a388-119499358f8a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica se o texto “Adotar pode mudar uma vida. Que tal buscar seu novo melhor amigo hoje? Vem com a gente!” está presente no html",
+              "fullTitle": "Página inicial Verifica se o texto “Adotar pode mudar uma vida. Que tal buscar seu novo melhor amigo hoje? Vem com a gente!” está presente no html",
+              "timedOut": null,
+              "duration": 436,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('Adotar pode mudar uma vida. Que tal buscar seu novo melhor amigo hoje? Vem com a gente!').should('be.visible');",
+              "err": {},
+              "uuid": "3c29d47a-b59f-4984-8a31-4ba825b5f36b",
+              "parentUUID": "644e45e9-0081-4b0c-a388-119499358f8a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica texto no botão que redireciona para home",
+              "fullTitle": "Página inicial Verifica texto no botão que redireciona para home",
+              "timedOut": null,
+              "duration": 425,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Ver pets disponíveis para adoção').should('be.visible');",
+              "err": {},
+              "uuid": "19ab9f38-b88b-48df-9989-a651d76823a1",
+              "parentUUID": "644e45e9-0081-4b0c-a388-119499358f8a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "69460f39-2041-4cf2-82fa-8d06773354f4",
+            "325c757c-994d-4358-82ab-3329d483c46a",
+            "ca6408fa-b5b3-4413-949c-6d59925e3746",
+            "7bab5518-ef67-4ada-b065-83efcb8ed283",
+            "5a209e64-616e-4313-878e-15954b66738e",
+            "3c29d47a-b59f-4984-8a31-4ba825b5f36b",
+            "19ab9f38-b88b-48df-9989-a651d76823a1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2552,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-02-07T12:40:55.841Z",
+    "end": "2025-02-07T12:40:59.272Z",
+    "duration": 3431,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4bbff496-d82d-4763-a665-abc688588de9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\aula2-paginas.cy.js",
+      "file": "cypress\\e2e\\aula2-paginas.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "aa915b68-72db-4e34-bf0d-ed838228dd2a",
+          "title": "Teste de páginas no Adopet",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visita a página de /login do Adopet",
+              "fullTitle": "Teste de páginas no Adopet Visita a página de /login do Adopet",
+              "timedOut": null,
+              "duration": 506,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://adopet-frontend-cypress.vercel.app/login');",
+              "err": {},
+              "uuid": "83a3ea35-2f7f-438c-97d3-65f8944b8022",
+              "parentUUID": "aa915b68-72db-4e34-bf0d-ed838228dd2a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visita a página de /home do Adopet",
+              "fullTitle": "Teste de páginas no Adopet Visita a página de /home do Adopet",
+              "timedOut": null,
+              "duration": 709,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://adopet-frontend-cypress.vercel.app/home');",
+              "err": {},
+              "uuid": "32ca4418-7be3-4847-8c5f-789a993df010",
+              "parentUUID": "aa915b68-72db-4e34-bf0d-ed838228dd2a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visita a página de /home do AdoPet e clique no botão “Falar com o responsável”",
+              "fullTitle": "Teste de páginas no Adopet Visita a página de /home do AdoPet e clique no botão “Falar com o responsável”",
+              "timedOut": null,
+              "duration": 897,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://adopet-frontend-cypress.vercel.app/home');\ncy.get('.header__message').click();",
+              "err": {},
+              "uuid": "37e68a20-4a7f-43b5-a5c2-ff24225bef8e",
+              "parentUUID": "aa915b68-72db-4e34-bf0d-ed838228dd2a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "83a3ea35-2f7f-438c-97d3-65f8944b8022",
+            "32ca4418-7be3-4847-8c5f-789a993df010",
+            "37e68a20-4a7f-43b5-a5c2-ff24225bef8e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2112,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

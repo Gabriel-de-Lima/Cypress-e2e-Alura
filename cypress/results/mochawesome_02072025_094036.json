@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-02-07T12:40:32.638Z",
+    "end": "2025-02-07T12:40:36.868Z",
+    "duration": 4230,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "274ac02e-e004-4332-901e-71510554540b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\aula2-login-fluxo.cy.js",
+      "file": "cypress\\e2e\\aula2-login-fluxo.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0d2e71a6-ecd1-462b-93fd-21c6d5ea222f",
+          "title": "Fluxo de Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verifica se o login funciona ao clicar no icone de mensagem",
+              "fullTitle": "Fluxo de Login Verifica se o login funciona ao clicar no icone de mensagem",
+              "timedOut": null,
+              "duration": 3022,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.header__message').click();\ncy.login('jarbas@email.com', 'Senha123');\ncy.url().should('include', '/home');",
+              "err": {},
+              "uuid": "dab070db-28d3-49a2-84b9-0f065c4dadc1",
+              "parentUUID": "0d2e71a6-ecd1-462b-93fd-21c6d5ea222f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "dab070db-28d3-49a2-84b9-0f065c4dadc1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3022,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
