@@ -1,3 +1,5 @@
+![Curso de Cypress](/capa.png)
+
 # 📌 Ementa do Curso "Cypress: automatizando testes E2E"
 
 Faça esse curso de Quality Assurance e:
